@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Magnus Brand Colors */
+    --color-magnus-coral: #ff6b47; /* Coral/Orange primary accent */
+    --color-magnus-coral-light: #ff8c6b;
+    --color-magnus-coral-dark: #e55a35;
+    --color-magnus-green: #10b981; /* Green secondary accent */
+    --color-magnus-green-light: #34d399;
+    --color-magnus-green-dark: #059669;
+    --color-magnus-dark: #1f2937; /* Dark grey/black */
+    --color-magnus-dark-light: #374151;
+    
+    /* Primary Colors */
+    --color-primary-dark: #1f2937;
+    --color-primary-light: #f9fafb;
+    --color-primary-text: #1f2937;
+    
+    /* Fear Dig Colors - using coral/orange */
+    --color-fear-bg: #fff5f3;
+    --color-fear-border: #ff6b47;
+    --color-fear-text: #c2410c;
+    --color-fear-icon: #ff6b47;
+    
+    /* Value Dig Colors - using coral/orange */
+    --color-value-bg: #fff5f3;
+    --color-value-border: #ff6b47;
+    --color-value-text: #c2410c;
+    --color-value-icon: #ff6b47;
+    
+    /* Reality Dig Colors - using green */
+    --color-reality-bg: #f0fdf4;
+    --color-reality-border: #10b981;
+    --color-reality-text: #047857;
+    --color-reality-icon: #10b981;
+    
+    /* Info Colors */
+    --color-info-bg: #fff5f3;
+    --color-info-border: #ff6b47;
+  }
+}
+

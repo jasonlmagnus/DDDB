@@ -1,0 +1,281 @@
+{
+  "brand": "Korn Ferry",
+  "tone_of_voice": {
+    "name": "Radically Human",
+    "tagline": "Be true. Be you. Be authentic and honest. Always.",
+    "year_established": 2021,
+    "core_philosophy": {
+      "description": "Building authentic and honest connections through language that brings people together, not distances them.",
+      "foundation": "People are our purpose. We believe in partners, not clients. Trust is the foundation of any relationship.",
+      "key_attributes": [
+        "Honesty",
+        "Empathy",
+        "Authenticity"
+      ]
+    },
+    "brand_values": [
+      {
+        "value": "Inclusive",
+        "description": "We embrace people with different points of view, from different backgrounds. And we think and work as one team."
+      },
+      {
+        "value": "Honest",
+        "description": "We say what we mean, and we do what we say. We hold ourselves to the highest standards. And we make it safe for people to speak out when they see something wrong."
+      },
+      {
+        "value": "Knowledgeable",
+        "description": "We are insatiably curious, always learning new things. And we actively help our colleagues grow and develop too, with mentoring and support."
+      },
+      {
+        "value": "Performance",
+        "description": "We never settle for the status quo. We always strive to be better today than we were yesterday, and do our best for our clients, colleagues, and shareholders."
+      }
+    ],
+    "six_simple_rules": [
+      {
+        "rule_number": 1,
+        "title": "Start with why",
+        "description": "That's either the most important or exciting point you're trying to make to benefit your reader.",
+        "guidance": "Focus on why the reader should care, not just what we do or how we do it. Challenge every statement with 'why?' until no more 'whys?' need to be asked."
+      },
+      {
+        "rule_number": 2,
+        "title": "Tell it like it is",
+        "description": "And if there's a negative thing to say, talk about how you'll help people overcome it.",
+        "guidance": "Start with the positive. It takes courage to tell partners what they need to know, not just what they want to hear."
+      },
+      {
+        "rule_number": 3,
+        "title": "Say what you think",
+        "description": "And back it up with our knowledge and research.",
+        "guidance": "Give opinions (not just observations) and recommendations (not only options). Use stories, relationships, and facts and figures to back up your points."
+      },
+      {
+        "rule_number": 4,
+        "title": "Use everyday language",
+        "description": "Would an intelligent person from outside our industry understand?",
+        "guidance": "Drop consultant-speak and jargon. Use normal words. Make language accessible to everyone."
+      },
+      {
+        "rule_number": 5,
+        "title": "Make it personal",
+        "description": "Say 'you', 'we', 'us' (not 'partners', 'Korn Ferry', 'human resources/capital').",
+        "guidance": "Try to say 'you' and 'yours' more than you say 'we' and 'ours'. Aim for a ratio of 2:1."
+      },
+      {
+        "rule_number": 6,
+        "title": "Give them a clear call to action",
+        "description": "What do you want your reader to do?",
+        "guidance": "Be clear about the next step and why they should care."
+      }
+    ],
+    "writing_techniques": {
+      "write_like_you_speak": {
+        "description": "Writing like you speak makes you sound more human and empathetic.",
+        "methods": [
+          {
+            "technique": "Use contractions",
+            "good_contractions": [
+              "I'm",
+              "You're",
+              "We're",
+              "I'll",
+              "We'll",
+              "You'll",
+              "They'll",
+              "Can't",
+              "Don't"
+            ],
+            "bad_contractions": [
+              "It'll",
+              "It'd",
+              "Would've",
+              "Should've",
+              "Could've",
+              "Wouldn't've",
+              "Mustn't've",
+              "That'll"
+            ]
+          },
+          {
+            "technique": "Say you, we, us, and I",
+            "guidance": "Personal pronouns add a personal touch. Say 'you,' not 'partners'; 'we' and 'us' not 'Korn Ferry.' Aim for a ratio of 2:1 (you:we)."
+          },
+          {
+            "technique": "Swap nouns for verbs",
+            "guidance": "If a noun ends in -ance/-ence, -ing, -tion/-sion, and -ment, you can usually turn it into a verb.",
+            "examples": [
+              {
+                "before": "The utilization of technology is widespread.",
+                "after": "We use a lot of technology."
+              },
+              {
+                "before": "The management of people is important.",
+                "after": "How you manage your people is important."
+              }
+            ]
+          },
+          {
+            "technique": "Write active sentences",
+            "guidance": "Active sentences make it clear who is doing what and take responsibility for what's happened.",
+            "examples": [
+              {
+                "passive": "The sheriff was shot.",
+                "active": "I shot the sheriff."
+              },
+              {
+                "passive": "Mistakes have been made.",
+                "active": "We made mistakes."
+              }
+            ]
+          }
+        ]
+      },
+      "be_knowledgeable": {
+        "description": "Showcase our expert advice, insight, and ability to apply what we know.",
+        "methods": [
+          "Say what you think - give opinions and recommendations at the start",
+          "Say why you think it - use stories, relationships, and facts/figures",
+          "Say it straight - no hedging, no caveats"
+        ]
+      },
+      "be_honest": {
+        "description": "Tell it like it is, but start with the positive.",
+        "methods": [
+          "Start with the positive to open people up rather than make them defensive",
+          "Cut it down - SCAMPI (Succinct Copy Always Makes a Positive Impact)",
+          "Vary the pace - mix sentence lengths"
+        ]
+      },
+      "be_inclusive": {
+        "description": "Make language accessible to everyone.",
+        "methods": [
+          "Use normal words, not formal ones",
+          "Drop consultant-speak and buzzwords",
+          "Avoid or explain jargon",
+          "Use metaphors to explain complicated ideas",
+          "Use bullets and headings"
+        ]
+      }
+    },
+    "formatting_guidelines": {
+      "capitalization": {
+        "default": "sentence case",
+        "headlines": "Sentence case, no end punctuation",
+        "subheadings": "Sentence case, use periods",
+        "job_titles": "Title case",
+        "proper_nouns": "Always capitalize"
+      },
+      "punctuation": {
+        "oxford_comma": "Use when it helps avoid confusion",
+        "periods": {
+          "sentences": "Always use",
+          "headlines": "Never use",
+          "subheadings": "Always use",
+          "cta": "Never use"
+        },
+        "em_dash": {
+          "usage": "Use longest dash (—) without spaces on either side",
+          "purpose": "Separate non-essential information, can replace commas or parentheses"
+        },
+        "hyphens": "Only use as part of hyphenated compounds, not as punctuation"
+      },
+      "numbers": {
+        "one_to_nine": "Write out in full",
+        "ten_and_above": "Use numerals",
+        "sentence_start": "Always write out in full"
+      },
+      "bullet_lists": {
+        "short_items": "No punctuation on each point, colon to introduce, full stop at end",
+        "complete_sentences": "Use normal punctuation",
+        "stem_statements": "Only full stop at end of bullets, don't capitalize first word"
+      },
+      "contractions": {
+        "usage": "Use in writing as you would in speech",
+        "approved_list": [
+          "I'm",
+          "You're",
+          "We're",
+          "I'll",
+          "We'll",
+          "You'll",
+          "They'll",
+          "Can't",
+          "Don't"
+        ]
+      }
+    },
+    "style_preferences": {
+      "language": "American English (default), UK English for UK-specific content",
+      "reference_guide": "Chicago Manual of Style",
+      "covid_reference": "COVID-19 (all caps, hyphen, numerals)",
+      "compound_words": "Hyphenate compound adjectives to avoid confusion",
+      "acronyms": {
+        "first_use": "Spell out with acronym in brackets",
+        "subsequent_use": "Use acronym only",
+        "common_acronyms": "No need to spell out if audience will understand",
+        "plurals": "No apostrophe"
+      },
+      "ampersand": "Only use in abbreviations (D&I) or company names (AT&T), not as replacement for 'and'"
+    },
+    "document_structure": {
+      "longer_documents": [
+        "One-page summary at the start",
+        "Clear contents page",
+        "Pull-quotes to break up text",
+        "Boxes for detailed information",
+        "Pictures and captions",
+        "Appendices for technical details"
+      ],
+      "bullets": [
+        "Keep short",
+        "Start each with same type of word",
+        "Stick to four or five maximum"
+      ],
+      "subheadings": {
+        "types": [
+          "Categories (e.g., 'Introduction')",
+          "Questions (e.g., 'What are the next steps?')",
+          "Summaries (e.g., 'We need to step in now')",
+          "Quirky/surprising (e.g., 'Let's get going')"
+        ]
+      }
+    },
+    "words_to_avoid": {
+      "instead_of_human_resources": "people",
+      "instead_of_human_capital": "people",
+      "instead_of_assist": "help",
+      "instead_of_utilize": "use",
+      "instead_of_maximize": "make the most of",
+      "instead_of_leverage": "use / make the most of",
+      "instead_of_optimize": "make the most of",
+      "instead_of_operational_excellence": "doing everyday things better",
+      "avoid_jargon": "touch base, align, bandwidth, leverage, digitally transformative"
+    },
+    "theoretical_foundation": {
+      "influences": [
+        {
+          "person": "Simon Sinek",
+          "contribution": "Start with Why - standing out from the crowd"
+        },
+        {
+          "person": "Richard Boyatzis",
+          "contribution": "Resonant leadership - starting with the positive emotional attractor"
+        },
+        {
+          "person": "Daniel Kahneman",
+          "contribution": "Cognitive ease - making writing as clear as possible so readers don't strain"
+        }
+      ]
+    },
+    "key_principles_summary": [
+      "Simple, honest, clear, consistent is always better than long words and technical concepts",
+      "Use language to come together, not to distance",
+      "Don't hide behind language to sound more intelligent",
+      "Don't build walls of words that people have to climb over",
+      "Listen as much as we talk",
+      "Give everyone a platform to speak, whatever their background",
+      "The truth is: simple, honest, clear, consistent is always better"
+    ]
+  }
+}
