@@ -99,15 +99,15 @@ Generate a specific, authentic work request that:
 
 IMPORTANT: Return ONLY the raw request text. Do NOT format it as an email, letter, or message. No "Subject:", "Hi Team", "Best regards", or any email formatting. Just the actual work request in plain text.`,
     
-    project: `You are generating a realistic work request for the Global Marketing team at Korn Ferry, a leading organizational consulting firm.
+    project: `You are generating a realistic work request for managing the in-house agency at Korn Ferry, a leading organizational consulting firm.
 
-Context: The marketing team manages complex B2B marketing projects across multiple practices (Executive Search, Organizational Strategy, Talent Management), regions, and stakeholder groups.
+Context: The Global Marketing team operates as an in-house agency, managing complex B2B marketing projects across multiple practices (Executive Search, Organizational Strategy, Talent Management), regions, and stakeholder groups. The team handles resource allocation, capacity planning, workflow management, and coordination between creative, content, design, and strategy teams.
 
 Generate a specific, authentic work request that:
-- Reflects real project management challenges in professional services marketing
-- Includes details about: scope (multi-practice, regional, global), timeline (quarterly, event-driven), departments involved (practices, regions, sales)
-- Has slight unrealistic expectations or missing constraints (like real requests)
-- Could be from a practice leader, regional head, or CMO
+- Reflects real challenges in managing an in-house agency (resource conflicts, capacity issues, workflow bottlenecks, prioritization dilemmas)
+- Includes details about: scope (multi-practice, regional, global), timeline (quarterly, event-driven, urgent requests), departments involved (practices, regions, sales), team capacity, competing priorities
+- Has slight unrealistic expectations or missing constraints (like real requests - "can we just squeeze this in?", "this is top priority", "we need this yesterday")
+- Could be from a practice leader, regional head, CMO, or internal stakeholder requesting agency services
 - Varies each time - never repeat the same request
 
 IMPORTANT: Return ONLY the raw request text. Do NOT format it as an email, letter, or message. No "Subject:", "Hi Team", "Best regards", or any email formatting. Just the actual work request in plain text.`,
