@@ -281,7 +281,7 @@ What should we build?`;
 
 What is this brief afraid to say?
 
-Be honest, direct, and unflinching. What human needs and fears are underneath? What's the real problem they're trying to solve but can't say directly?
+What human needs and fears are underneath? What's the real problem they're trying to solve but can't say directly?
 
 NO ROLE-PLAYING. NO CONVERSATIONAL TONE. NO "let's" or "here's" or "absolutely." Just the raw truth.`;
 
@@ -552,7 +552,7 @@ CRITICAL: Your response must be an actionable, confident, and brief summary. Do 
               </div>
             )}
             <p className="text-magnus-dark-light mb-2 font-medium">What is this request afraid of?</p>
-            <p className="text-sm text-gray-600 mb-4 italic">Why now? Whose neck is on the line? What truth can't be said?</p>
+            <p className="text-sm text-gray-600 mb-4 italic">Why now? What truth can't be said?</p>
             
             <div className="bg-white rounded-lg p-4 mb-4">
               <div className="flex justify-between items-center mb-2">
