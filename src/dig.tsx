@@ -279,11 +279,11 @@ What should we build?`;
 
   const getDefaultFearPrompt = () => `REQUEST: ${request || '[Your request here]'}
 
-Do an archaeological dig on the brief to expose what's really underneath all that corporate language. Be honest, direct, and unflinching about what this brief is actually revealing through its fear-based language.
+What is this brief afraid to say?
 
-Be provocative but true. What human needs and fears are underneath.
+Be honest, direct, and unflinching. What human needs and fears are underneath? What's the real problem they're trying to solve but can't say directly?
 
-NO ROLE-PLAYING. NO CONVERSATIONAL TONE. NO "let's" or "here's" or "absolutely." Just the raw truth you've uncovered.`;
+NO ROLE-PLAYING. NO CONVERSATIONAL TONE. NO "let's" or "here's" or "absolutely." Just the raw truth.`;
 
   const getDefaultValuePrompt = () => `REQUEST: ${request || '[Your request here]'}
 
@@ -397,56 +397,46 @@ Words to Avoid:
 Key Principle: Simple, honest, clear, consistent is always better than long words and technical concepts. Use language to come together, not to distance. Don't hide behind language to sound more intelligent.`;
 
     const prompts: Record<string, string> = {
-      content: `Write content that:
-1. Addresses the fear/problem directly (not the sanitized version)
-2. Delivers the value insight (what would make them stop scrolling)
-3. Works within reality constraints (can pass legal/approval)
+      content: `Create an actionable, confident, and brief summary that clearly states:
+- What content is needed and why it matters
+- What will happen when this content is created
+- How it addresses the fear, delivers the value, and works within reality constraints
 
 ${tovGuidelines}
 
-Make it honest. Make it specific. Make someone feel "finally, someone said it."`,
-      data: `Design a dashboard/analysis that:
-1. Answers the real question (from fear dig)
-2. Focuses on the metric that matters (from value dig)
-3. Uses data we actually have reliable access to (from reality dig)
-
-Prioritize clarity over comprehensiveness.
-Show me: What's the ONE view/number/insight that drives decisions?
+Be direct. Be confident. Be brief. No time-based promises. Just what's needed, why, and what happens.`,
+      data: `Create an actionable, confident, and brief summary that clearly states:
+- What dashboard/analysis is needed and why it matters
+- What will happen when this is built
+- How it answers the real question, focuses on what matters, and uses available data
 
 ${tovGuidelines}
 
-When describing the dashboard/analysis, apply these guidelines to make it accessible and meaningful.`,
-      design: `Design a solution that:
-1. Solves the actual user problem (from fear dig)
-2. Creates the "finally, this makes sense" moment (from value dig)
-3. Can be built with current tech/resources (from reality dig)
-
-Show me the simplest version that removes the core frustration.
+Be direct. Be confident. Be brief. No time-based promises. Just what's needed, why, and what happens.`,
+      design: `Create an actionable, confident, and brief summary that clearly states:
+- What design solution is needed and why it matters
+- What will happen when this is built
+- How it solves the user problem, creates the "finally, this makes sense" moment, and works with current resources
 
 ${tovGuidelines}
 
-When describing the design, use these guidelines to explain it clearly and personally.`,
-      project: `Create a project approach that:
-1. Addresses the organizational problem (from fear dig)
-2. Delivers meaningful impact (from value dig)
-3. Works with actual resources/politics (from reality dig)
-
-What's the minimum scope that proves value?
-What's the first 90 days that build confidence for the rest?
+Be direct. Be confident. Be brief. No time-based promises. Just what's needed, why, and what happens.`,
+      project: `Create an actionable, confident, and brief summary that clearly states:
+- What project approach is needed and why it matters
+- What will happen when this is executed
+- How it addresses the organizational problem, delivers impact, and works with actual resources
 
 ${tovGuidelines}
 
-Apply these guidelines throughout the project approach.`,
-      strategy: `Develop a strategy that:
-1. Responds to the real pressure (from fear dig)
-2. Creates actual business change (from value dig)
-3. Our organization can execute (from reality dig)
-
-What's the version that survives first contact with reality?
+Be direct. Be confident. Be brief. No time-based promises. Just what's needed, why, and what happens.`,
+      strategy: `Create an actionable, confident, and brief summary that clearly states:
+- What strategy is needed and why it matters
+- What will happen when this is executed
+- How it responds to the real pressure, creates business change, and is executable
 
 ${tovGuidelines}
 
-Apply these guidelines to make the strategy clear, honest, and actionable.`
+Be direct. Be confident. Be brief. No time-based promises. Just what's needed, why, and what happens.`
     };
 
     const buildStatement = nowBuilding || `Based on the value dig (${valueDig || '[what would actually matter]'}) and reality dig (${realityDig || '[what you can actually deliver]'})`;
@@ -463,7 +453,9 @@ Now I'm building: ${buildStatement}
 
 Given this understanding, help me build the right thing using Korn Ferry's "Radically Human" tone of voice:
 
-${prompts[discipline] || prompts.content}`;
+${prompts[discipline] || prompts.content}
+
+CRITICAL: Your response must be an actionable, confident, and brief summary. Do NOT include time-based promises, deadlines, or milestones (no "in 90 days", "first phase", "by Q4", etc.). Focus on: what is needed, why it matters, and what will happen. Be direct and confident.`;
   };
 
   const renderStep = () => {
@@ -1244,7 +1236,29 @@ ${prompts[discipline] || prompts.content}`;
                   Previous
                 </button>
 
-                {currentStep !== 'final' && (
+                {currentStep === 'build' ? (
+                  <button
+                    onClick={handleGenerateBuild}
+                    disabled={isGeneratingBuild}
+                    className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-colors ${
+                      isGeneratingBuild
+                        ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                        : 'bg-magnus-green text-white hover:bg-magnus-green-dark'
+                    }`}
+                  >
+                    {isGeneratingBuild ? (
+                      <>
+                        <Loader2 size={18} className="animate-spin" />
+                        Generating...
+                      </>
+                    ) : (
+                      <>
+                        <Sparkles size={18} />
+                        Send To AI
+                      </>
+                    )}
+                  </button>
+                ) : currentStep !== 'final' && (
                   <button
                     onClick={handleNext}
                     disabled={!canAdvance(currentStep)}
@@ -1353,7 +1367,7 @@ ${prompts[discipline] || prompts.content}`;
       {modalContent && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onClick={() => setModalContent(null)}>
           <div className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
-            <div className="flex items-center justify-between p-6 border-b border-gray-200">
+            <div className="flex items-center justify-between p-6 border-b border-gray-200 flex-shrink-0">
               <h2 className="text-xl font-bold text-magnus-dark">{modalTitle}</h2>
               <button
                 onClick={() => setModalContent(null)}
@@ -1362,12 +1376,12 @@ ${prompts[discipline] || prompts.content}`;
                 <X size={24} />
               </button>
             </div>
-            <div className="p-6 overflow-y-auto flex-1">
+            <div className="p-6 overflow-y-auto flex-1 min-h-0">
               <div className="prose prose-sm max-w-none text-magnus-dark">
                 <ReactMarkdown>{modalContent}</ReactMarkdown>
               </div>
             </div>
-            <div className="p-6 border-t border-gray-200 flex justify-end gap-3">
+            <div className="p-6 border-t border-gray-200 flex justify-end gap-3 flex-shrink-0">
               <button
                 onClick={() => {
                   copyToClipboard(modalContent, 'modal');
